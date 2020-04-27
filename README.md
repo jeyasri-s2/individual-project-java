@@ -1,6 +1,6 @@
-Student Id : 0141510132
+### Student Id : 0141510132
 
-Student name: Jeyasri Subramanian
+### Student name: Jeyasri Subramanian
 
 
 -'src' folder has all java source files
@@ -12,9 +12,9 @@ Student name: Jeyasri Subramanian
 -'test' folder has testcases java files
 
 
-Run the Precompiled classes:
+## Run the Precompiled classes:
 
-To Run application
+### To Run application
 
 1. Navigate to CreditCardApplication folder
 2. Run the below command 
@@ -22,7 +22,7 @@ To Run application
 
 `java -cp bin:libs/json-simple-1.1.1.jar com.sjsu.CreditCardMainApplication /inputfiles/Sample.json /output/Output2.json`
 
-To Run test cases
+### To Run test cases
 1. Navigate to CreditCardApplication folder
 2. Run the below command 
 
