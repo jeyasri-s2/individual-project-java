@@ -52,7 +52,6 @@ public class JSONFileDecorator extends CreditCardDecorator {
 		        	  creditCards.add(card);
 		        	  
 		        	  data.add(new String[] { cardNum, cardType.getMessage(), "None" });
-		        	  System.out.println(" Cardtype is not error  "+data.size());
 
 		          }
 		          else

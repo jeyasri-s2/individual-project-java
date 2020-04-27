@@ -51,7 +51,7 @@ public class CreditCardMainApplication {
 				card.writeOutputFile(outputFilename);
 				
 				System.out.println("creditCards objects "+creditCards);
-				System.out.println(" Execution completed: Please check output file for results ");
+				System.out.println(" Execution Successful: Please check output file for results ");
 
 				break;
 			case "xml":
@@ -62,7 +62,7 @@ public class CreditCardMainApplication {
 				card.writeOutputFile(outputFilename);
 				System.out.println(card.getOutputFileFormat());
 				System.out.println("creditCards objects "+creditCards);
-				System.out.println(" Execution completed: Please check output file for results ");
+				System.out.println(" Execution Successful: Please check output file for results ");
 
 				break;
 				
@@ -75,7 +75,7 @@ public class CreditCardMainApplication {
 				System.out.println(card.getOutputFileFormat());
 				System.out.println("creditCards objects "+creditCards);
 				
-				System.out.println(" Execution completed: Please check output file for results ");
+				System.out.println(" Execution Successful: Please check output file for results ");
 				
 				break;
 			default:

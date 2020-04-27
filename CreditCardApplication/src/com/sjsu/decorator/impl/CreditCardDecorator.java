@@ -1,6 +1,7 @@
 package com.sjsu.decorator.impl;
 
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -39,20 +40,20 @@ public class CreditCardDecorator implements ICreditCard{
 		CardType type = CardType.ERROR;
 		
 		String regex = "^[0-9]+$";
-		 
+		regex = "-?\\d+(\\.\\d+)?(E-?\\d+)?(E\\+?\\d+)?(E?\\d+)?(e-?\\d+)?(e\\+?\\d+)?(e?\\d+)?";
 		Pattern pattern = Pattern.compile(regex);
 		
 		Matcher matcher = pattern.matcher(creditcardNumber);
 		if(matcher.matches()) {
 			try {
-				long number = Long.parseLong(creditcardNumber);
+				long number = new BigDecimal(creditcardNumber).longValue();
 				
 				boolean masterCardValidation = prefixMatched(number,5);
 				boolean visaCardValidation = prefixMatched(number,4);
 				boolean amexCardValidation = prefixMatched(number,3);
 				boolean discoverCardValidation = prefixMatched(number,6011);
 				
-				
+				creditcardNumber = String.valueOf(number);
 				if(masterCardValidation && isValidMasterCard(creditcardNumber, number)) {
 					
 					type = CardType.MASTER;
@@ -154,7 +155,7 @@ public class CreditCardDecorator implements ICreditCard{
 	@Override
 	public CreditCard createCreditCardByType(CardType cardType, String cardNum, String name, String expDate) {
 		
-		long cardNumber = Long.parseLong(cardNum);
+		long cardNumber = new BigDecimal(cardNum).longValue();
     	CreditCard card = CardFactory.getCreditCard(cardType, cardNumber, name, expDate);
 		return card;
 	}

@@ -59,7 +59,6 @@ public class XMLFileDecorator extends CreditCardDecorator {
 
 				Node nNode = nList.item(temp);
 
-				System.out.println("\nCurrent Element :" + nNode.getNodeName());
 
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
