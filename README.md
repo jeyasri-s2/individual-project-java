@@ -3,9 +3,14 @@ Student Id : 0141510132
 Student name: Jeyasri Subramanian
 
 
-'src' folder has all java source code
-'bin' folder has precompiled class file
-'libs folder has jar files
+-'src' folder has all java source files
+
+-'bin' folder has precompiled class files
+
+-'libs folder has jar files
+
+-'test' folder has testcases java files
+
 
 Run the Precompiled classes:
 
@@ -13,6 +18,7 @@ To Run application
 
 1. Navigate to CreditCardApplication folder
 2. Run the below command 
+
 
 `java -cp bin:libs/json-simple-1.1.1.jar com.sjsu.CreditCardMainApplication /inputfiles/Sample.json /output/Output2.json`
 
