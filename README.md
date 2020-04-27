@@ -16,7 +16,7 @@
 
 ### To Run application
 
-1. Navigate to CreditCardApplication folder
+1. Navigate to "CreditCardApplication" folder
 2. Run the below command 
 
 
